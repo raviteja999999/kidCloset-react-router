@@ -1,0 +1,28 @@
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    //align-items: center;
+    justify-content: center;
+  }
+
+  .flex-container__form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   // justify-content: space-around ;
+
+  }
+
+  input{
+    margin : 5px;
+    font-size:18px;
+    justify-content: space-around ;
+  padding:10px 10px 10px 5px;
+  display:block;
+  width:400px;
+  border:none;
+  border-bottom:1px solid #757575;
+
+
+
+  }

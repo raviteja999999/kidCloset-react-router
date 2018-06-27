@@ -1,0 +1,313 @@
+.box-layout__landscape {
+  //align-items: center;
+  background: url('/images/bg10.jpg'); // https://www.webpagefx.com/blog/web-design/responsive-background-image/
+  background-position: center center;
+  background-size: cover;
+  //align-items: center;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+
+  position: absolute;
+  height: 90%;
+  width: 100%;
+  top: 0;
+  overflow: hidden;
+//myCode
+//position:absolute;
+//width: 100%;
+//top: 0;
+//left: 0;
+//right: 0;
+//bottom: 0;
+
+}
+//For some reason, setting the height to 90vh doesn't works here. 
+.box-layout__portrait {
+  //align-items: center;
+  background: url('/images/bg10.jpg'); // https://www.webpagefx.com/blog/web-design/responsive-background-image/
+  background-position: 70% 70%;
+  background-size: cover;
+  //display: flex;
+  //justify-content: center;
+}
+
+.box2-layout {
+  align-items: center;
+  background: url('/images/bg3.jpg'); // https://www.webpagefx.com/blog/web-design/responsive-background-image/
+  background-position: 30% 70%;
+  background-size: cover;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  width: 100vw;
+}
+
+
+.box2boy-layout {
+  align-items: center;
+  background: url('/images/tyboy.jpg'); // https://www.webpagefx.com/blog/web-design/responsive-background-image/
+  background-position: 30% 30%;;
+  background-size: cover;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  width: 100vw;
+}
+
+//That's the one we are using.
+.box-layout__box {
+  background: fade-out(white, .6);
+  border-width: thin;
+  border-style: solid;
+  border-radius: 2%;
+  padding: $l-size $m-size;
+  text-align: center;
+  width: 60%;
+  margin-top:20vh;
+  margin-left:20%;  
+}
+
+.box-layout__boxty {
+  background: fade-out(white, .6);
+  border-width: thin;
+  border-style: solid;
+  border-radius: 2%;
+  padding: $l-size $m-size;
+  text-align: center;
+  width: 60%;
+  font-family: 'Delius';
+  font-size: '20px';
+}
+
+.box-layout__title {
+  margin: 0 0 $m-size 0;
+  line-height: 1;
+  justify-content: center;//Doesn't seems to be working.  
+  text-align: center;
+  
+}
+
+//For some reason position is not working as expected. What fixed does is that the position of sibling element becomes inpdendent. 
+.text__slick {
+  position: fixed;
+  font-size: 20px;
+  margin-top: 10vh;
+  margin-left: 10vw;
+  width: 10vw;
+}
+
+.box-layout__background {
+  background:#f5f5f5;
+  width: 52.5vw;
+  border-radius: 0px 0px 15px 15px;
+ // background-color: rgba(194, 204, 206,1);
+  //opacity: 1;
+
+
+}
+
+.box-layout__box1 {
+ // background: white;
+  //background-size: cover;
+  //text-align: center;
+ // align-items: centre;
+ // justify-content: center;
+  //display: flex;
+  //justify-content: center;
+  //align-items: center;
+}
+
+/*.box-layout__landscape__new {
+  //align-items: center;
+ // background: url('/images/bg10.jpg'); // https://www.webpagefx.com/blog/web-design/responsive-background-image/
+ // background-position: center center;
+ // background-size: cover;
+  background-color: red;
+  background-position: center center;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+   top:0;
+    border-bottom: 0;
+    left: 0;
+    right: 0;
+ // opacity:0.5;
+  //align-items: center;
+
+  display: flex;
+  justify-content: center;
+ // position: absolute;
+  /*top: '0';
+  left: '0';
+  right: '0';
+  bottom: '0';*/
+ // background-color: rgba(0,0,255,0.5);
+  //opacity: 0.5;
+  //transition: opacity 0.3s;}*/
+
+
+
+.box-layout__parent{
+  position: relative;
+  width: 100%;
+ // height: 100%;
+
+}
+
+.box-layout__landscape__new {
+  //align-items: center;
+  position:absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+ // opacity: 0.3;
+  filter: blur(5px);
+  background: url('/images/bg10.jpg'); // https://www.webpagefx.com/blog/web-design/responsive-background-image/
+  background-position: center center;
+  background-size: cover;
+  //align-items: center;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+.box-layout__new{
+
+  position: relative;
+  //display: flex;
+  //flex-direction: column;
+  //justify-content: center;
+}
+
+.box-layout__background__new {
+  background:#f5f5f5;
+  width: 60.5vw;
+  position: relative;
+//  border-radius: 50px!important;
+ border-radius: 15px 15px 15px 15px;
+  
+ // background-color: rgba(194, 204, 206,1);
+  //opacity: 1;
+}
+
+.box-layout__portrait__new {
+  //align-items: center;
+  position:absolute;
+  //width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+ // opacity: 0.3;
+  filter: blur(5px);
+  background: url('/images/bg10.jpg'); // https://www.webpagefx.com/blog/web-design/responsive-background-image/
+  //background-position: 70% 70%;
+  background-size: cover;
+  //align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 1660px) {
+  .loginpage__box__landscape {
+    background-color:#f5f5f5;
+   // background: url('/images/tyboy.jpg');
+    width: 755.3px;
+    border-radius: 0px 0px 15px 15px;
+  }
+  .loginpage__appbar__landscape{
+    height: 60px;
+    width: 697.2px;
+    border-top-left-radius: 15px;
+    box-shadow:none;
+    }
+
+    .loginpage__closebutton__landscape
+    {
+      background: #f5f5f5;
+      border: 0;
+       box-shadow: none;
+       height: 60px;
+       width: 58.1px;
+       border-top-right-radius: 15px;
+      font-size: 1.6vh;
+  
+    }
+  
+}
+
+
+@media (min-width: 1660px){
+  .loginpage__box__landscape 
+  {
+    background-color:#f5f5f5;
+  // background: url('/images/tyboy.jpg');
+    width: 45.5vmax;
+    border-radius: 0px 0px 15px 15px;
+  }
+
+
+.loginpage__appbar__landscape
+  {
+   //height: 60px;
+   width: 100% ;
+    border-top-left-radius: 15px;
+    box-shadow: none ;
+    //style : {height : 60px , width = '42vmax' , box-shadow= 'none' };
+  // background: url('/images/tyboy.jpg');
+  }
+  .loginpage__closebutton__landscape
+  {
+    background: #f5f5f5;
+    border: 0;
+     box-shadow: none;
+     height: 60px;
+     width: 3.5vmax;
+     border-top-right-radius: 15px;
+    font-size: 1.6vh;
+
+  }
+
+}
+
+.loginpage__box__portrait {
+  //background: url('/images/tyboy.jpg');
+  background-color:#f5f5f5;
+  width: 48.8vh;
+  border-radius: 0px 0px 15px 15px;
+}
+
+.loginpage__appbar__portrait{
+  height: 60px;
+  width: 42vh;
+  border-top-left-radius: 15px;
+  box-shadow:none;
+  background: url('/images/tyboy.jpg');
+  }
+
+
+  .loginpage__closebutton__portrait
+  {
+    background: #f5f5f5;
+    border: 0;
+     box-shadow: none;
+     height: 60px;
+     width: 6.8vh;
+     border-top-right-radius: 15px;
+    font-size: 1.6vh;
+
+  }

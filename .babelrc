@@ -1,0 +1,12 @@
+{
+  "presets": [
+    "env",
+    "react"
+  ],
+  "plugins": [
+    // ["import", { "libraryName": "antd", "libraryDirectory": "es", "style": "css" }], // `style: true` for less
+    "transform-class-properties",
+    "transform-object-rest-spread",
+    "emotion"
+  ]
+}

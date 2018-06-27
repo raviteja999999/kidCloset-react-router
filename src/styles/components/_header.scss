@@ -1,0 +1,71 @@
+.header {
+  //background: rgb(235, 232, 236);
+  position: sticky;
+  //position: fixed;
+  z-index: 1;
+  top: 0;
+  background: fade-out(#d84315, .1);
+}
+
+.header__content {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  width: '60vw';
+}
+
+.header__title {
+  color: #DA8383;
+  text-decoration: none;
+  h1 {
+    margin: 0;
+  }
+}
+
+.label__text {
+  font-family: 'Delius';
+}
+
+.error__message {
+  font-family: 'Delius';
+  color: 'Red';
+  padding-left: '6vw';
+  padding-right: '6vw';
+  text-align: 'center';
+  padding-bottom: '0px';
+  padding-top: '5px';
+}
+
+.hint__text {
+  font-family: 'Delius';
+  margin-left: '10%';
+  margin-right: '10%';
+  margin-bottom: '20px';
+}
+
+// https://github.com/soenkekluth/react-sticky-state 
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+.sticky.sticky-fixed.is-sticky {
+  margin-top: 0;
+  margin-bottom: 0;
+  position: fixed;
+  -webkit-backface-visibility: hidden;
+          -moz-backface-visibility: hidden;
+       backface-visibility: hidden;
+}
+
+.sticky.sticky-fixed.is-sticky:not([style*="margin-top"]) {
+  margin-top: 0 !important;
+}
+.sticky.sticky-fixed.is-sticky:not([style*="margin-bottom"]) {
+  margin-bottom: 0 !important;
+}
+
+
+.sticky.sticky-fixed.is-absolute{
+  position: absolute;
+}
